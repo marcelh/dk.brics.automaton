@@ -277,7 +277,7 @@ public class Automaton implements Serializable, Cloneable {
 		if (isDebug())
 			visited = new LinkedHashSet<State>();
 		else
-			visited = new HashSet<State>();
+			visited = new LinkedHashSet<State>();
 		LinkedList<State> worklist = new LinkedList<State>();
 		worklist.add(initial);
 		visited.add(initial);
